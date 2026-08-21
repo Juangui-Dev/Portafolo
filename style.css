@@ -114,6 +114,7 @@ body {
   display: grid;
   grid-template-columns: 44px 1fr;
   min-height: calc(100vh - 110px);
+  width: 100%;
 }
 .gutter {
   background: var(--bg-elevated);
@@ -131,7 +132,7 @@ body {
   .gutter { display: none; }
 }
 
-.content { padding: 56px 8vw 100px; max-width: 980px; }
+.content { padding: 56px 8vw 100px; max-width: 980px; width: 100%; min-width: 0; }
 
 .panel { display: none; animation: fadeIn 0.35s ease; }
 .panel.active { display: block; }
@@ -228,7 +229,9 @@ body {
   font-size: 15.5px;
   line-height: 2.1;
   margin-bottom: 28px;
-  overflow-x: auto;
+  width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 .code-card p, .skills-json p, .terminal-block p { margin: 0 0 4px; white-space: pre-wrap; }
 .code-card p:last-child, .skills-json p:last-child, .terminal-block p:last-child { margin-bottom: 0; }
@@ -255,6 +258,8 @@ body {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 28px;
+  width: 100%;
+  min-width: 0;
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 .project-card:hover { border-color: var(--accent); transform: translateY(-3px); }
@@ -287,7 +292,9 @@ body {
   font-size: 15.5px;
   line-height: 2.1;
   margin-bottom: 36px;
-  overflow-x: auto;
+  width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .bars { display: flex; flex-direction: column; gap: 20px; max-width: 520px; }
@@ -314,6 +321,9 @@ body {
   font-family: var(--font-mono);
   font-size: 15.5px;
   line-height: 2.2;
+  width: 100%;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 .prompt { color: var(--str); margin-right: 8px; }
 
