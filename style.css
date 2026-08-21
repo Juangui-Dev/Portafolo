@@ -331,3 +331,59 @@ body {
   font-weight: 600;
   flex-wrap: wrap;
 }
+
+/* ============================================
+   RESPONSIVO — TABLET (≤ 900px)
+   ============================================ */
+@media (max-width: 900px) {
+  .content { padding: 44px 6vw 90px; }
+  .project-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+}
+
+/* ============================================
+   RESPONSIVO — MÓVIL GRANDE (≤ 640px)
+   ============================================ */
+@media (max-width: 640px) {
+  .titlebar { padding: 10px 14px; gap: 10px; }
+  .titlebar-text { font-size: 11px; }
+
+  .tabs { -webkit-overflow-scrolling: touch; }
+  .tab { padding: 11px 14px; font-size: 12px; }
+
+  .content { padding: 36px 5vw 80px; }
+
+  .hero-desc { max-width: 100%; font-size: 15.5px; }
+
+  .cta-row { flex-direction: column; gap: 10px; }
+  .btn { width: 100%; text-align: center; }
+
+  .code-card, .skills-json { padding: 16px 16px; font-size: 12.5px; }
+  .indent { padding-left: 18px; }
+
+  .project-grid { grid-template-columns: 1fr; }
+  .project-card { padding: 18px; }
+
+  .bars { max-width: 100%; }
+  .bar-item { flex-wrap: wrap; gap: 8px; }
+  .bar-label { width: auto; }
+  .bar-track { flex-basis: 100%; }
+
+  .terminal-block { padding: 16px; font-size: 12.5px; overflow-x: auto; }
+
+  .statusbar {
+    justify-content: flex-start;
+    font-size: 10px;
+    padding: 8px 14px;
+  }
+  .statusbar span:nth-child(3) { display: none; }
+}
+
+/* ============================================
+   RESPONSIVO — MÓVIL PEQUEÑO (≤ 380px)
+   ============================================ */
+@media (max-width: 380px) {
+  .titlebar-text { display: none; }
+  .hero-title { font-size: 19px; }
+  .stack-strip { gap: 6px; }
+  .chip { font-size: 10.5px; padding: 5px 9px; }
+}
