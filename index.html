@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juan — Portafolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanline"></div>
+
+<!-- BARRA DE VENTANA -->
+<header class="titlebar">
+  <div class="dots"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span></div>
+  <span class="titlebar-text">juan@portafolio: ~/proyectos</span>
+</header>
+
+<!-- BARRA DE PESTAÑAS ESTILO EDITOR -->
+<nav class="tabs" id="tabs">
+  <button class="tab active" data-target="inicio">index.html</button>
+  <button class="tab" data-target="sobre-mi">sobre-mi.js</button>
+  <button class="tab" data-target="proyectos">proyectos.py</button>
+  <button class="tab" data-target="habilidades">habilidades.json</button>
+  <button class="tab" data-target="contacto">contacto.md</button>
+</nav>
+
+<div class="editor-body">
+
+  <!-- NUMERACIÓN DE LÍNEAS DECORATIVA -->
+  <div class="gutter" aria-hidden="true"></div>
+
+  <main class="content">
+
+    <!-- INICIO -->
+    <section id="inicio" class="panel active">
+      <p class="line-comment">// bienvenido a mi terminal</p>
+      <h1 class="hero-title">
+        <span class="kw">const</span> <span class="var">desarrollador</span> <span class="op">=</span> <span class="str">"Juan"</span><span class="op">;</span>
+      </h1>
+      <p class="hero-sub"><span class="typed" id="typed"></span><span class="cursor">▊</span></p>
+      <p class="hero-desc">Estudiante universitario construyendo cosas con Python, Java, Spring Boot y la web. Aprendiendo a versionar y publicar mi trabajo como se debe.</p>
+      <div class="cta-row">
+        <a href="#proyectos" class="btn btn-primary" data-nav="proyectos">ver_proyectos()</a>
+        <a href="#contacto" class="btn btn-ghost" data-nav="contacto">contactar()</a>
+      </div>
+      <div class="stack-strip">
+        <span class="chip">Python</span>
+        <span class="chip">Java</span>
+        <span class="chip">Spring Boot</span>
+        <span class="chip">SQLite</span>
+        <span class="chip">HTML/CSS</span>
+        <span class="chip">Git &amp; GitHub</span>
+      </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobre-mi" class="panel">
+      <p class="line-comment">// sobre-mi.js</p>
+      <h2 class="section-title">01. Sobre mí</h2>
+      <div class="code-card">
+        <p><span class="kw">function</span> <span class="fn">quienSoy</span><span class="op">()</span> <span class="op">{</span></p>
+        <p class="indent"><span class="kw">return</span> <span class="str">"Estudiante de software con curiosidad por construir sistemas completos, desde la lógica de backend hasta la interfaz que la gente usa."</span><span class="op">;</span></p>
+        <p><span class="op">}</span></p>
+      </div>
+      <p class="prose">Vengo trabajando en proyectos que cruzan varios lenguajes y paradigmas: autenticación con bases de datos, sistemas orientados a objetos en Spring Boot, lógica de control en Java y catálogos web con HTML/CSS. Ahora estoy sumando Git y GitHub a la caja de herramientas para poder versionar y compartir todo esto correctamente.</p>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="panel">
+      <p class="line-comment">// proyectos.py</p>
+      <h2 class="section-title">02. Proyectos</h2>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="dot-lang lang-py"></span>
+            <h3>Sistema de Login &amp; Registro</h3>
+          </div>
+          <p class="project-desc">Aplicación de escritorio en Python con Tkinter y SQLite. Autenticación basada en roles, navegación multi-pantalla y contraseñas con hash SHA-256.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">Tkinter</span><span class="tag">SQLite</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="dot-lang lang-java"></span>
+            <h3>Sistema de Pagos POO</h3>
+          </div>
+          <p class="project-desc">Aplicación de consola en Spring Boot aplicando abstracción, herencia, polimorfismo y encapsulamiento, con validación de entrada en tiempo real.</p>
+          <div class="tag-row"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Maven</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="dot-lang lang-java"></span>
+            <h3>Backend Fórmula 1 2024</h3>
+          </div>
+          <p class="project-desc">Proyecto universitario en construcción usando arquitectura MVC para modelar datos de la temporada 2024 de F1.</p>
+          <div class="tag-row"><span class="tag">Java</span><span class="tag">MVC</span><span class="tag">En progreso</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-head">
+            <span class="dot-lang lang-html"></span>
+            <h3>Catálogo Hello Kitty</h3>
+          </div>
+          <p class="project-desc">Catálogo web de accesorios con diseño responsive en tonos rosa, organizado por categorías de bolsos y mochilas.</p>
+          <div class="tag-row"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsive</span></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="panel">
+      <p class="line-comment">// habilidades.json</p>
+      <h2 class="section-title">03. Habilidades</h2>
+      <div class="skills-json">
+        <p><span class="op">{</span></p>
+        <p class="indent"><span class="key">"backend"</span><span class="op">:</span> <span class="op">[</span><span class="str">"Java"</span><span class="op">,</span> <span class="str">"Spring Boot"</span><span class="op">,</span> <span class="str">"Python"</span><span class="op">]</span><span class="op">,</span></p>
+        <p class="indent"><span class="key">"datos"</span><span class="op">:</span> <span class="op">[</span><span class="str">"SQLite"</span><span class="op">]</span><span class="op">,</span></p>
+        <p class="indent"><span class="key">"frontend"</span><span class="op">:</span> <span class="op">[</span><span class="str">"HTML"</span><span class="op">,</span> <span class="str">"CSS"</span><span class="op">,</span> <span class="str">"JavaScript"</span><span class="op">]</span><span class="op">,</span></p>
+        <p class="indent"><span class="key">"herramientas"</span><span class="op">:</span> <span class="op">[</span><span class="str">"Git"</span><span class="op">,</span> <span class="str">"GitHub"</span><span class="op">,</span> <span class="str">"Maven"</span><span class="op">,</span> <span class="str">"VS Code"</span><span class="op">]</span><span class="op">,</span></p>
+        <p class="indent"><span class="key">"paradigmas"</span><span class="op">:</span> <span class="op">[</span><span class="str">"POO"</span><span class="op">,</span> <span class="str">"MVC"</span><span class="op">]</span></p>
+        <p><span class="op">}</span></p>
+      </div>
+      <div class="bars">
+        <div class="bar-item"><span class="bar-label">Python</span><div class="bar-track"><div class="bar-fill" style="width:80%"></div></div></div>
+        <div class="bar-item"><span class="bar-label">Java / Spring</span><div class="bar-track"><div class="bar-fill" style="width:78%"></div></div></div>
+        <div class="bar-item"><span class="bar-label">HTML / CSS</span><div class="bar-track"><div class="bar-fill" style="width:70%"></div></div></div>
+        <div class="bar-item"><span class="bar-label">Git / GitHub</span><div class="bar-track"><div class="bar-fill" style="width:45%"></div></div></div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="panel">
+      <p class="line-comment">// contacto.md</p>
+      <h2 class="section-title">04. Contacto</h2>
+      <p class="prose">Este sitio quedó listo para subirse a GitHub. Reemplaza los datos de abajo por los tuyos antes de publicarlo.</p>
+      <div class="terminal-block">
+        <p><span class="prompt">$</span> echo <span class="str">"correo:"</span> tu-correo@ejemplo.com</p>
+        <p><span class="prompt">$</span> echo <span class="str">"github:"</span> github.com/tu-usuario</p>
+        <p><span class="prompt">$</span> echo <span class="str">"linkedin:"</span> linkedin.com/in/tu-usuario</p>
+        <p><span class="prompt">$</span> <span class="cursor-static">▊</span></p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<footer class="statusbar">
+  <span>● listo</span>
+  <span id="clock-status">UTF-8 · Ln 1, Col 1</span>
+  <span>hecho con HTML, CSS y JS</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
