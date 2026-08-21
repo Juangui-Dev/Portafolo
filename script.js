@@ -25,7 +25,8 @@ navLinks.forEach(link => {
 // EFECTO DE ESCRITURA EN EL SUBTITULO
 // ============================================
 const frases = [
-  "// estudiante de software",
+  "// estudiante de Ing.Software",
+  "// Trabajando en proyectos web",
   "// aprendiendo Git y GitHub",
   "// construyendo cosas, un commit a la vez"
 ];
