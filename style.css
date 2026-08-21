@@ -128,8 +128,9 @@ body {
   );
 }
 @media (max-width: 640px) {
-  .editor-body { grid-template-columns: 0 1fr; }
+  .editor-body { display: block; }
   .gutter { display: none; }
+  .content { width: 100%; max-width: 100%; }
 }
 
 .content { padding: 56px 8vw 100px; max-width: 980px; width: 100%; min-width: 0; }
@@ -231,7 +232,7 @@ body {
   margin-bottom: 28px;
   width: 100%;
   min-width: 0;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 .code-card p, .skills-json p, .terminal-block p { margin: 0 0 4px; white-space: pre-wrap; }
 .code-card p:last-child, .skills-json p:last-child, .terminal-block p:last-child { margin-bottom: 0; }
@@ -294,7 +295,7 @@ body {
   margin-bottom: 36px;
   width: 100%;
   min-width: 0;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 .bars { display: flex; flex-direction: column; gap: 20px; max-width: 520px; }
@@ -323,7 +324,7 @@ body {
   line-height: 2.2;
   width: 100%;
   min-width: 0;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 .prompt { color: var(--str); margin-right: 8px; }
 
